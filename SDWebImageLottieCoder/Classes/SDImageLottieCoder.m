@@ -13,9 +13,11 @@
 #elif __has_include(<librlottie/librlottie.h>)
 #import <librlottie/librlottie.h>
 #else
-@import librlottie;
+#import "librlottie.h"
+//@import librlottie;
 #endif
 #import <CommonCrypto/CommonDigest.h>
+
 
 #define SD_TWO_CC(c1,c2) ((uint16_t)(((c2) << 8) | (c1)))
 
